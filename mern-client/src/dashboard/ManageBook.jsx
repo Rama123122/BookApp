@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const ManageBook = () => {
   const [allBooks , setAllBooks] = useState([]);
   useEffect ( () => {
-    fetch(`http://localhost:5000/all-books`).then (res =>res.json()).then(data => setAllBooks(data));
+    fetch(`https://bookapp-1-kkid.onrender.com/all-books`).then (res =>res.json()).then(data => setAllBooks(data));
   },[])
 
   return (
